@@ -24,6 +24,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
 			},
+
+			loadCharactersId: (id)=> {
+
+				  fetch("https://rickandmortyapi.com/api/character/"+id, requestOptions)
+					.then(response => response.json())
+					.then(data => setStore(data))
+					.catch(error => console.log('error', error));
+			},
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();

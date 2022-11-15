@@ -1,0 +1,16 @@
+nav img{
+    height: 100px;
+}
+
+nav{
+    background-color: #c0f8ff;
+}
+
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon{
+    color: black;
+}
